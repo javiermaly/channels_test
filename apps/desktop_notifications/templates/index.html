@@ -1,0 +1,28 @@
+<html>
+{% load staticfiles %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+
+	<script type="text/javascript" src="{% static 'js/reconnecting-websocket.min.js' %}"></script>
+
+	<script type="text/javascript" src="{% static 'js/knocker.js' %}"></script>
+
+
+
+<head>
+	<title></title>
+	
+	<script type="text/javascript">
+
+	  var knocker_language = '{{ LANGUAGE_CODE }}';
+	  var knocker_url = '/notifications';  // Set this to the actual URL
+	</script>
+
+
+
+</head>
+<body>
+knock
+</body>
+</html>
